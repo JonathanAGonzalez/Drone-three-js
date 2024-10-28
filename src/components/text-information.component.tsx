@@ -4,25 +4,17 @@ import clsx from 'clsx';
 import { useCustomizer } from '../store/customizer.store';
 import { Button } from './button.component';
 
-const textItems = [
-  'Price: $999',
-  'Order yours today!',
-  'Link to website',
-  'Drone description:',
-];
+const textItems = ['Price: $999', 'Order yours today!', 'Link to website'];
 
 const specifications = [
   '4K high-resolution camera',
-  '3-axis image stabilization',
   'Intuitive remote control',
   'Easy-to-use mobile app',
   'Flight time up to 30 minutes',
-  'Range up to 10 km',
-  'Water and dust resistant',
 ];
 
 const defaultStyles =
-  'rounded-xl md:rounded-none order-2 transition-all duration-700  shadow-lg flex flex-col justify-center items-start z-0 h-full bg-[#222] backdrop-blur-md';
+  'rounded-xl md:rounded-none order-2 transition-all duration-700  shadow-lg flex flex-col justify-center items-start z-0 h-full bg-[#222] backdrop-blur-md overflow-scroll';
 
 const stylesWhenCustomizerActive = 'opacity-0 w-0 p-0';
 const stylesWhenCustomizerIsNotActive =
